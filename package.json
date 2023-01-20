@@ -1,0 +1,22 @@
+{
+  "name": "greek-philosophers",
+  "version": "1.0.0",
+  "description": "A fan site dedicated to a TV show",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/caitreid/greek-philosophers.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/caitreid/greek-philosophers/issues"
+  },
+  "homepage": "https://github.com/caitreid/greek-philosophers#readme",
+  "dependencies": {
+    "sass": "^1.57.1"
+  }
+}
