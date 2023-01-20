@@ -6,53 +6,128 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Greek Philosphers at the Met</title>
     <link rel="stylesheet" href="sass/style.css">
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com"> -->
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Prata&display=swap" rel="stylesheet"> -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Prata&display=swap" rel="stylesheet">
-  </head>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400&family=Prata&display=swap" rel="stylesheet">
+</head>
   <body>
-    <div>
+    <div class="header">
         <header>
-            <h1>The Met</h1>
+            <h1>Learn // NEW YORK</h1>
         </header>
     </div>
-    <div class="">
-        <div class="card">
-            <h2>Plato</h2>
-            <div class="card__bio">
-                <button>Learn More</button>
+    <div class="discover discover__wrapper">
+        <h2>The Metropolitan Museum of Art</h2>
+        <p>___</p>
+        <div class="discover__intro">     
+            <p>One of the city's greatest public resources for research and education. Learn about ancient philosophers through the museum's extensive collection.</p>
+        </div>
+        
+        <div class="card__wrapper">
+            <div class="card" data-id="1">
+                <h2>Socrates</h2>
+                <div class="card__bio">
+                    <p>A Greek philosopher from Athens who is credited as the founder of Western philosophy and among the first moral philosophers of the ethical tradition of thought.</p>
+                    <!-- <button>Learn More</button> -->
+                    <!-- https://www.metmuseum.org/art/collection/search/436105 -->
+                    <button><a data-modal="modal-1">Learn More</a></button>
+                </div>
+            </div>
+            <div class="card card--2" data-id="2">
+                <h2>Plato</h2>
+                <div class="card__bio">
+                    <!-- https://www.metmuseum.org/art/collection/search/399977 -->
+                    <p>An Ancient Greek philosopher born in Athens during the Classical period in Ancient Greece. He founded the Platonist school of thought and the Academy, the first institution of higher learning on the European continent.</p>
+                    <!-- <button>Learn More</button> -->
+                    <button><a data-modal="modal-2">Learn More</a></button>
+                </div>
+            </div>
+            <div class="card card--3" data-id="3">
+                <h2>Artistotle</h2>
+                <div class="card__bio">
+                    <p>A student of Plato, Aristotle’s works shaped centuries of philosophy from Late Antiquity through the Renaissance. </p>
+                    <!-- <button>Learn More</button> -->
+                    <button><a data-modal="modal-3">Learn More</a></button>
+                </div>
+            </div>
+            <div class="card card--4" data-id="4">
+                <!-- https://www.metmuseum.org/art/collection/search/39112 -->
+                <h2>Buddha</h2>
+                <div class="card__bio">
+                    <p>Siddhartha Gautama, most commonly referred to as the Buddha, was a wandering ascetic and religious teacher who lived in South Asia during the 6th or 5th century BCE and founded Buddhism.</p>
+                    <button><a data-modal="modal-4">Learn More</a></button>
+                </div>
+            </div>
+            <div class="card" data-id="5">
+                <h2>Lao Tzu</h2>
+                <div class="card__bio">
+                    <!-- https://www.metmuseum.org/art/collection/search/24058 -->
+                    <p>Laozi (/ˈlaʊdzə/, Chinese: 老子), also known by numerous other names, was a semilegendary ancient Chinese Taoist philosopher. Laozi is a Chinese honorific, generally translated as "the Old Master". </p>
+                    <button><a data-modal="modal-5">Learn More</a></button>
+                </div>
+            </div>
+            <div class="card" data-id="6">
+                <h2>Confucius</h2>
+                <div class="card__bio">
+                    <p>was a Chinese philosopher and politician of the Spring and Autumn period who is traditionally considered the paragon of Chinese sages. Confucius's teachings and philosophy underpin East Asian culture and society.</p>
+                    <button><a data-modal="modal-6">Learn More</a></button>
+                </div>
             </div>
         </div>
-        <div class="card">
+        <div class="modal" id="modal-1">
+            <div class="modal-bg modal-exit"></div>
+            <div class="modal-container">
+                <div class="modal__image" data-id="1"></div>
             <h2>Socrates</h2>
-            <div class="card__bio">
-                <button>Learn More</button>
+            <button class="modal-close modal-exit">X</button>
             </div>
         </div>
-        <div class="card">
-            <h2>Artistotle</h2>
-            <div class="card__bio">
-                <button>Learn More</button>
+        <div class="modal" id="modal-2">
+            <div class="modal-bg modal-exit"></div>
+            <div class="modal-container">
+                <div class="modal__image" data-id="2"></div>
+            <h2>Plato</h2>
+            <button class="modal-close modal-exit">X</button>
             </div>
         </div>
-        <div class="card">
-            <h2>Diogenes</h2>
-            <div class="card__bio">
-                <button>Learn More</button>
+        <div class="modal" id="modal-3">
+            <div class="modal-bg modal-exit"></div>
+            <div class="modal-container">
+                <div class="modal__image" data-id="3"></div>
+            <h2>Aristotle</h2>
+            <button class="modal-close modal-exit">X</button>
             </div>
         </div>
-        <div class="card">
-            <h2>Epicurius</h2>
-            <div class="card__bio">
-                <button>Learn More</button>
+        <div class="modal" id="modal-4">
+            <div class="modal-bg modal-exit"></div>
+            <div class="modal-container">
+                <div class="modal__image" data-id="4"></div>
+            <h2>Buddha</h2>
+            <button class="modal-close modal-exit">X</button>
             </div>
         </div>
-        <div class="card">
-            <h2>Pythagoras</h2>
-            <div class="card__bio">
-                <button>Learn More</button>
+        <div class="modal" id="modal-5">
+            <div class="modal-bg modal-exit"></div>
+            <div class="modal-container">
+                <div class="modal__image" data-id="5"></div>
+            <h2>Lao Tzu</h2>
+            <button class="modal-close modal-exit">X</button>
             </div>
         </div>
+        <div class="modal" id="modal-6">
+            <div class="modal-bg modal-exit"></div>
+            <div class="modal-container">
+                <div class="modal__image" data-id="6"></div>
+            <h2>Confucius</h2>
+            <button class="modal-close modal-exit">X</button>
+            </div>
+        </div>
+        <footer>
+            <p>Caitlin Reid | 2023</p>
+        </footer>
     </div>
 	<script src="js/script.js"></script>
   </body>

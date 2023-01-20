@@ -1,0 +1,74 @@
+.modal {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &.open {
+      visibility: visible;
+      opacity: 1;
+      transition-delay: 0s;
+    }
+    &-bg {
+      position: absolute;
+      background: rgba(0, 128, 128, 0.548);
+      width: 100%;
+      height: 100%;
+    }
+    &-container {
+      width:40vw;
+      height:40vw;
+      border-radius: 10px;
+      background: #fff;
+      position: relative;
+      padding: 30px;
+    }
+    &-close {
+      position: absolute;
+      right: 15px;
+      top: 15px;
+      outline: none;
+      appearance: none;
+      color: red;
+      background: none;
+      border: 0px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    &__image {
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 100%;
+      height: 50%;
+      
+      &[data-id="1"]{
+        background-image: url(../images/socrates.jpeg);
+      }
+      &[data-id="2"]{
+          background-image: url(../images/symposia.jpeg);
+      }
+      &[data-id="3"]{
+          background-image: url(../images/plato.jpeg);
+          
+      }
+      &[data-id="4"]{
+          background-image: url(../images/seated-buddha.jpeg);
+          background-position-y: 15%;
+      }
+      &[data-id="5"]{
+          background-image: url(../images/lao-tzu.jpeg);
+          background-position-y: 60%;
+      }
+      &[data-id="6"]{
+          background-image: url(../images/conf.png);
+          background-position-y: 50%;
+      }
+    }
+  }
