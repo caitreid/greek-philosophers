@@ -6,6 +6,13 @@
         padding-bottom: 2rem;
         font-family: 'Jost', sans-serif;
         font-size: 1.25rem;
+        max-width: 80%;
+        button {
+            background-color: rgb(40, 40, 40);
+            color:white;
+            border: 0px;
+            font-size: .75rem;
+        }
     }
 }
 
@@ -22,20 +29,24 @@
         background-position-y: center;
         position: relative;
         box-shadow: inset 0 0 0 1000px rgba(119,66,0, 0.619);
-
+        opacity: 1;
+        transition: display 1s;
         &__bio {
             font-family: 'Jost', sans-serif;
         }
         button {
             position: absolute;
             bottom: 2rem;
-            // float:right;
         }
         &__modal {
             width: 50vw;
             background-color: white;
             z-index: 100;
             position: relative;
+        }
+        &.hide {
+            opacity:0;
+            display: none;
         }
         &[data-id="1"]{
             background-image: url(../images/socrates.jpeg);
@@ -61,6 +72,7 @@
         }
     }
 }
+
 
 button {
     background-color: transparent;

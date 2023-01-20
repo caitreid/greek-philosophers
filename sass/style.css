@@ -362,7 +362,7 @@ footer {
 }
 .modal__bg {
   position: absolute;
-  background: rgba(0, 128, 128, 0.548);
+  background: rgba(70, 84, 84, 0.55);
   width: 100%;
   height: 100%;
 }
@@ -451,6 +451,13 @@ footer {
   padding-bottom: 2rem;
   font-family: "Jost", sans-serif;
   font-size: 1.25rem;
+  max-width: 80%;
+}
+.discover__intro button {
+  background-color: rgb(40, 40, 40);
+  color: white;
+  border: 0px;
+  font-size: 0.75rem;
 }
 
 .card__wrapper {
@@ -467,6 +474,8 @@ footer {
   background-position-y: center;
   position: relative;
   box-shadow: inset 0 0 0 1000px rgba(119, 66, 0, 0.619);
+  opacity: 1;
+  transition: display 1s;
 }
 .card__wrapper .card__bio {
   font-family: "Jost", sans-serif;
@@ -480,6 +489,10 @@ footer {
   background-color: white;
   z-index: 100;
   position: relative;
+}
+.card__wrapper .card.hide {
+  opacity: 0;
+  display: none;
 }
 .card__wrapper .card[data-id="1"] {
   background-image: url(../images/socrates.jpeg);
