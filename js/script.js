@@ -34,13 +34,13 @@ onViewButton.addEventListener('click', (event) => {
             }
         })
 
-        onViewButton.innerHTML = "<button class='view-all'>View all</button>"
+        onViewButton.innerHTML = "<a class='button view-all'>View all</a>"
 
     } else {
         console.log('hide')
         onViewButton.classList.remove('clicked')
         cards.forEach(card =>  card.classList.remove('hide'))
-        onViewButton.innerHTML = "<button>On view</button>"
+        onViewButton.innerHTML = "<a class='button view-all'>On view</a>"
     }
 })
 

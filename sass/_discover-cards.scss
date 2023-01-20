@@ -8,11 +8,16 @@
         font-family: 'Jost', sans-serif;
         font-size: 1.25rem;
         max-width: 70%;
-        button {
+        .button {
             background-color: rgb(40, 40, 40);
             color:white;
             border: 0px;
             font-size: .75rem;
+            position: unset;
+            &:hover {
+                background-color: red;
+                color:white;
+            }
         }
     }
 }

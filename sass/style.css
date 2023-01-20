@@ -456,11 +456,16 @@ footer {
   font-size: 1.25rem;
   max-width: 70%;
 }
-.discover__intro button {
+.discover__intro .button {
   background-color: rgb(40, 40, 40);
   color: white;
   border: 0px;
   font-size: 0.75rem;
+  position: unset;
+}
+.discover__intro .button:hover {
+  background-color: red;
+  color: white;
 }
 
 .card__wrapper {
