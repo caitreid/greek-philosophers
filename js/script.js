@@ -15,8 +15,6 @@ modals.forEach((trigger) => {
   });
 });
 
-
-
 const onViewButton = document.querySelector('.filter__button')
 const cards = document.querySelectorAll('.card')
 
