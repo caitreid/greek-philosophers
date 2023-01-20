@@ -5,7 +5,7 @@ modals.forEach(function (trigger) {
     event.preventDefault();
     const modal = document.getElementById(trigger.dataset.modal);
     modal.classList.add('open');
-    const exits = modal.querySelectorAll('.modal-exit');
+    const exits = modal.querySelectorAll('.modal__exit');
     exits.forEach(function (exit) {
       exit.addEventListener('click', function (event) {
         event.preventDefault();

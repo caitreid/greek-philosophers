@@ -10,7 +10,6 @@ Adapted "House of the Dragon Fan Page" -- but Greek Philosophers.
 ## Requirements
 
 - Six 'character' cards with the name of the character, a photo, and two buttons. 
---> Plato, Socrates, Aristotle, Diogenes, Epicurius, Pythagoras
 - Every card, when 'bio' is clicked, reveals a short biography of the notable figure.
 - Additional interaction on the modal
 - Filters philosopher by branch of philosophy (ethics, methaphysics, etc)

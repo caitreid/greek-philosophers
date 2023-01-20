@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Greek Philosphers at the Met</title>
+    <title>Philosphers at the Met</title>
     <link rel="stylesheet" href="sass/style.css">
     <!-- <link rel="preconnect" href="https://fonts.googleapis.com"> -->
     <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
@@ -36,7 +36,7 @@
                     <button><a data-modal="modal-1">Learn More</a></button>
                 </div>
             </div>
-            <div class="card card--2" data-id="2">
+            <div class="card" data-id="2">
                 <h2>Plato</h2>
                 <div class="card__bio">
                     <!-- https://www.metmuseum.org/art/collection/search/399977 -->
@@ -45,15 +45,14 @@
                     <button><a data-modal="modal-2">Learn More</a></button>
                 </div>
             </div>
-            <div class="card card--3" data-id="3">
+            <div class="card" data-id="3">
                 <h2>Artistotle</h2>
                 <div class="card__bio">
                     <p>A student of Plato, Aristotle’s works shaped centuries of philosophy from Late Antiquity through the Renaissance. </p>
-                    <!-- <button>Learn More</button> -->
                     <button><a data-modal="modal-3">Learn More</a></button>
                 </div>
             </div>
-            <div class="card card--4" data-id="4">
+            <div class="card" data-id="4">
                 <!-- https://www.metmuseum.org/art/collection/search/39112 -->
                 <h2>Buddha</h2>
                 <div class="card__bio">
@@ -72,57 +71,87 @@
             <div class="card" data-id="6">
                 <h2>Confucius</h2>
                 <div class="card__bio">
-                    <p>was a Chinese philosopher and politician of the Spring and Autumn period who is traditionally considered the paragon of Chinese sages. Confucius's teachings and philosophy underpin East Asian culture and society.</p>
+                    <p>A Chinese philosopher and politician of the Spring and Autumn period who is traditionally considered the paragon of Chinese sages.</p>
                     <button><a data-modal="modal-6">Learn More</a></button>
                 </div>
             </div>
         </div>
         <div class="modal" id="modal-1">
-            <div class="modal-bg modal-exit"></div>
-            <div class="modal-container">
+            <div class="modal__bg modal__exit"></div>
+            <div class="modal__container">
                 <div class="modal__image" data-id="1"></div>
-            <h2>Socrates</h2>
-            <button class="modal-close modal-exit">X</button>
+                <div class="modal__text">
+                    <h2>Socrates</h2>
+                    <button class="modal__close modal__exit">X</button>
+                    <h3>The Death of Socrates, Jacques Louia David, 1787</h3>
+                    <p>In this landmark of Neoclassical painting from the years immediately preceding the French Revolution, David took up a classical story of resisting unjust authority in a sparse, frieze-like composition. The Greek philosopher Socrates (469–399 B.C.) was convicted of impiety by the Athenian courts; rather than renounce his beliefs, he died willingly, discoursing on the immortality of the soul before drinking poisonous hemlock.</p>
+                    <a href="https://www.metmuseum.org/art/collection/search/436105">Read More</a>
+                </div>
             </div>
         </div>
         <div class="modal" id="modal-2">
-            <div class="modal-bg modal-exit"></div>
-            <div class="modal-container">
+            <div class="modal__bg modal__exit"></div>
+            <div class="modal__container">
                 <div class="modal__image" data-id="2"></div>
-            <h2>Plato</h2>
-            <button class="modal-close modal-exit">X</button>
+                <button class="modal__close modal__exit">X</button>
+                <div class="modal__text">
+                    <h2>Plato</h2>
+                    <p>The symposium, conventionally interpreted as a drinking party, was a well-established feature of Greek—particularly Athenian— society. For over a century, representations on vases document that wine, women, and song were central ingredients. </p>
+                    <p>Even more worthy of emphasis, however, is the importance of the symposium as an institution that permitted citizens to gather, to transact business, and—as Plato's dialogue makes clear—to engage in serious discussion. An essential piece of equipment for the symposium was the vase in which the wine was diluted with water and from which it was served.</p>
+                    <a href="https://www.metmuseum.org/art/collection/search/253349">Read More</a>
+                </div>
             </div>
         </div>
         <div class="modal" id="modal-3">
-            <div class="modal-bg modal-exit"></div>
-            <div class="modal-container">
+            <div class="modal__bg modal__exit"></div>
+            <div class="modal__container">
                 <div class="modal__image" data-id="3"></div>
-            <h2>Aristotle</h2>
-            <button class="modal-close modal-exit">X</button>
+                <button class="modal__close modal__exit">X</button>
+                <div class="modal__text">
+                    <h2>Aristotle</h2>
+                    <p>An Ancient Greek philosopher and polymath. His writings cover a broad range of subjects including physics, biology, zoology, metaphysics, logic, ethics, aesthetics, poetry, drama, music, rhetoric, psychology, linguistics, economics, politics, meteorology, geology, and government.</p>
+                    <p>Plato's symposium: Socrates and his companions seated around a table discussing ideal love interruputed by Acibiades at left. As a well-known student of Plato, Aristotle was certainly in attendance.</p>
+                    <a href="https://www.metmuseum.org/art/collection/search/399977">Read More</a>
+                </div>
             </div>
         </div>
         <div class="modal" id="modal-4">
-            <div class="modal-bg modal-exit"></div>
-            <div class="modal-container">
+            <div class="modal__bg modal__exit"></div>
+            <div class="modal__container">
                 <div class="modal__image" data-id="4"></div>
-            <h2>Buddha</h2>
-            <button class="modal-close modal-exit">X</button>
+                <button class="modal__close modal__exit">X</button>
+                <div class="modal__text">
+                    <h2>Buddha</h2>
+                    <p>According to Buddhist tradition, he was born in Lumbini, in what is now Nepal,[b] to royal parents of the Shakya clan, but renounced his home life to live as a wandering ascetic (Sanskrit: śramaṇa).[7][h] After leading a life of begging, asceticism, and meditation, he attained enlightenment at Bodh Gaya in what is now India. The Buddha thereafter wandered through the lower Indo-Gangetic Plain, teaching and building a monastic order. He taught a Middle Way between sensual indulgence and severe asceticism,[8] leading to Nirvana,[i] that is, freedom from ignorance, craving, rebirth, and suffering.</p>
+                    <p>This particular Buddhist statue was created in Thailand in late 15th–16th century currently on view at The Met Fifth Avenue.</p>
+                    <a href="https://www.metmuseum.org/art/collection/search/39112">Read More</a>
+                </div>
             </div>
         </div>
         <div class="modal" id="modal-5">
-            <div class="modal-bg modal-exit"></div>
-            <div class="modal-container">
+            <div class="modal__bg modal__exit"></div>
+            <div class="modal__container">
                 <div class="modal__image" data-id="5"></div>
-            <h2>Lao Tzu</h2>
-            <button class="modal-close modal-exit">X</button>
+                <button class="modal__close modal__exit">X</button>
+                <div class="modal__text">
+                <h2>Lao Tzu</h2>
+                    <p>A central figure in Chinese culture, Laozi is generally considered the founder of philosophical and religious Taoism. He was claimed and revered as the ancestor of the 7th–10th century Tang dynasty. His work had a profound influence on subsequent Chinese religious movements and on subsequent Chinese philosophers.</p>
+                    <p>This sculpture epitomizes the merging of religious and secular imagery in later Chinese Buddhist sculpture. With his shaven head and elongated earlobes, the figure resembles a luohan (one of the Indian disciples of the Buddha), but his refined facial features, dignified posture, long-sleeved robe, and pointed shoes—all attributes associated with Confucian scholar-officials—identify him unmistakably as a youthful monk.</p>
+                <a href="https://www.metmuseum.org/art/collection/search/53201">Read More</a>
+                </div>
             </div>
         </div>
         <div class="modal" id="modal-6">
-            <div class="modal-bg modal-exit"></div>
-            <div class="modal-container">
+            <div class="modal__bg modal__exit"></div>
+            <div class="modal__container">
                 <div class="modal__image" data-id="6"></div>
-            <h2>Confucius</h2>
-            <button class="modal-close modal-exit">X</button>
+                <button class="modal__close modal__exit">X</button>
+                <div class="modal__text">
+                    <h2>Confucius</h2>
+                    <p>Confucius considered himself a transmitter for the values of earlier periods which he claimed had been abandoned in his time. His philosophical teachings, called Confucianism, emphasized personal and governmental morality, correctness of social relationships, justice, kindness, and sincerity. </p>
+                    <p>The Met collection contains a stele impression of the Confucius Temple. Stone rubbing is the practice of creating an image of surface features of a stone on paper. The image records features such as natural textures, inscribed patterns or lettering.</p>
+                    <a href="https://www.metmuseum.org/art/collection/search/64027">Read More</a>
+                </div>
             </div>
         </div>
         <footer>

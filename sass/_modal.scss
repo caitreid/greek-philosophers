@@ -15,21 +15,45 @@
       opacity: 1;
       transition-delay: 0s;
     }
-    &-bg {
+    &__bg {
       position: absolute;
       background: rgba(0, 128, 128, 0.548);
       width: 100%;
       height: 100%;
     }
-    &-container {
-      width:40vw;
-      height:40vw;
+    &__container {
+      width:45vw;
+      height:45vw;
       border-radius: 10px;
       background: #fff;
       position: relative;
       padding: 30px;
+      
+      p {
+        font-family: 'Jost', sans-serif; 
+      }
+      a, a:visited {
+        color: red;
+        text-underline-offset: 5px;
+      }
+      &:after {
+        content: "\a";
+        position: absolute;
+        background: rgb(0 92 79);
+        top: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 40%;
+        z-index: 0;
+      }
     }
-    &-close {
+    &__text {
+      overflow: scroll;
+      margin-bottom: 1rem;
+      height:50%;
+    }
+    &__close {
       position: absolute;
       right: 15px;
       top: 15px;
@@ -40,6 +64,10 @@
       border: 0px;
       font-weight: bold;
       cursor: pointer;
+      position: absolute;
+      z-index: 100;
+      font-size: 1rem;
+      font-family: sans-serif;
     }
     &__image {
       background-size: contain;
@@ -47,7 +75,8 @@
       background-position: center;
       width: 100%;
       height: 50%;
-      
+      z-index: 100;
+      position: relative;
       &[data-id="1"]{
         background-image: url(../images/socrates.jpeg);
       }
@@ -63,11 +92,11 @@
           background-position-y: 15%;
       }
       &[data-id="5"]{
-          background-image: url(../images/lao-tzu.jpeg);
+          background-image: url(../images/laozi.jpeg);
           background-position-y: 60%;
       }
       &[data-id="6"]{
-          background-image: url(../images/conf.png);
+          background-image: url(../images/confucius.jpeg);
           background-position-y: 50%;
       }
     }
