@@ -26,10 +26,12 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
+    max-width: 1400px;
+    margin: 0 auto;
     .card {
         color: white;
         padding: 2rem;
-        min-height: 15rem;
+        min-height: 17rem;
         border: none;
         background-size: cover;
         background-position-y: center;
@@ -37,6 +39,13 @@
         box-shadow: inset 0 0 0 1000px rgba(119,66,0, 0.619);
         opacity: 1;
         transition: display 1s;
+        h2{
+            line-height: 0;
+        }
+        h3.date {
+            padding-top: 0;
+            padding-bottom: 1rem;
+        }
         &__bio {
             font-family: 'Jost', sans-serif;
         }
