@@ -35,10 +35,6 @@
         &__bio {
             font-family: 'Jost', sans-serif;
         }
-        button {
-            position: absolute;
-            bottom: 2rem;
-        }
         &__modal {
             width: 50vw;
             background-color: white;
@@ -75,7 +71,7 @@
 }
 
 
-button {
+.button {
     background-color: transparent;
     border: 1px white solid;
     padding: 1rem;
@@ -83,6 +79,8 @@ button {
     text-transform: uppercase;
     font-family: 'Jost', sans-serif;
     transition: all 1s;
+    position: absolute;
+    bottom: 2rem;
     &:hover {
         background-color: rgba(255, 255, 255, 1);
         cursor: pointer;

@@ -369,7 +369,7 @@ footer {
 }
 .modal__container {
   width: 45vw;
-  height: 45vw;
+  height: 60vh;
   border-radius: 10px;
   background: #fff;
   position: relative;
@@ -483,10 +483,6 @@ footer {
 .card__wrapper .card__bio {
   font-family: "Jost", sans-serif;
 }
-.card__wrapper .card button {
-  position: absolute;
-  bottom: 2rem;
-}
 .card__wrapper .card__modal {
   width: 50vw;
   background-color: white;
@@ -519,7 +515,7 @@ footer {
   background-position-y: 50%;
 }
 
-button {
+.button {
   background-color: transparent;
   border: 1px white solid;
   padding: 1rem;
@@ -527,8 +523,10 @@ button {
   text-transform: uppercase;
   font-family: "Jost", sans-serif;
   transition: all 1s;
+  position: absolute;
+  bottom: 2rem;
 }
-button:hover {
+.button:hover {
   background-color: rgb(255, 255, 255);
   cursor: pointer;
   transition: all 1s;
