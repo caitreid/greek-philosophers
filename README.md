@@ -1,6 +1,6 @@
-# greek philosophers
+# philosophers at the museum
 
-Adapted "House of the Dragon Fan Page" -- but Greek Philosophers.
+Adapted "House of the Dragon Fan Page" -- but philosophers.
 
 ## Technologies
 - HTML
@@ -9,10 +9,10 @@ Adapted "House of the Dragon Fan Page" -- but Greek Philosophers.
 
 ## Requirements
 
-- Six 'character' cards with the name of the character, a photo, and two buttons. 
+- Six 'character' cards with the name of the character, a photo, and two buttons. (trigger modal, filter cards, link to new page)
 - Every card, when 'bio' is clicked, reveals a short biography of the notable figure.
 - Additional interaction on the modal
-- Filters philosopher by branch of philosophy (ethics, methaphysics, etc)
+- Filters by whether the work of art is currently on view
 - Adheres to semantic HTML best practices, using KISS and DRY!
 
 
