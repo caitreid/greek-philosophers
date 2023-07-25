@@ -1,6 +1,4 @@
-# philosophers at the museum
-
-Adapted "House of the Dragon Fan Page" -- but philosophers.
+# Met Collection
 
 ## Technologies
 - HTML
